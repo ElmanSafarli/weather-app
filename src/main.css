@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.video{
+    z-index: -2;
+}
+
+.app{
+    background-image: url('./img/bg.png');
+    background-size: cover;
+    height: 100vh;
+}
+
+.date{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+}
+
+/* Information */
+.city-name{
+    position: relative;
+    bottom: 70px;
+    left: 5px;
+}
+
+.country-name{
+    display:block
+}
+
+.country-name h1{
+    font-size: 4rem;
+    font-weight: 900;
+
+}
+
+.location-icon{
+    position: relative;
+    bottom: 35px;
+    padding-left: 10px;
+    font-size: 1.5rem;
+}
+
+.country-name p{
+    float:right;
+    font-weight: 400;
+    font-size: 1.5rem;
+    position: relative;
+    bottom: 60px;
+}
+
+
+.temp-info{
+    margin: 0;
+    padding: 25px;
+}
+
+.temp-info img{
+    width: 80px;
+    height: auto;
+}
+
+
+.temp-info h1{
+    font-weight: 900;
+    font-size: 4rem;
+    position: relative;
+    bottom: 15px;
+}
+
+.temp-info h2{
+    position: relative;
+    bottom: 35px;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+/* Additional Information */
+.additional-info{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    margin-top: 11rem;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: rgba(225, 2555, 225, 0.2);
+    bottom: 0;
+}
+
+
+/* Input Section */  
+/* .search{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: auto;
+} */
+
+.search{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-box{
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.search-btn{
+    color: #1da1f3;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.search-text{
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding-left: 20px;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 280px;
+}
+
+/* Time section */
+.time-section{
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: 900;
+
+}
+
+
+@media (max-width:900px) {
+    .date{
+        display: block;
+        text-align: center;
+        height: 130vh;
+        background-image: url('./img/bg.png');
+        background-size: cover;
+    }
+
+    .search{
+        position: relative;
+        bottom: 100px;
+    }
+
+    .country-name{
+        display: block;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .country-name p{
+        position: relative;
+        right: 37%;
+    }
+
+    .location-icon{
+        position: relative;
+        right: 3%;
+    }
+    
+    .additional-info{
+        display: flex;
+        position: absolute;
+        justify-content: space-evenly;
+        text-align: center;
+        width: 100%;
+        top: 85%;
+        padding: 1rem;
+        height: 100px;
+    }
+    
+    .time-section{
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+}
